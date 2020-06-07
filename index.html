@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Tip Calculator</title>
+</head>
+<body>
+	<div class="container rounded bg-light pt-4 pb-4 mt-4">
+		<h1 class="display-4 text-center">TIP CALCULATOR</h1>
+		
+		<form id="tip-form">
+			
+		<div class="form-group">
+			
+			
+			<label   for="amount">Bill amount</label>
+			<input class="form-control " type="number" id="amount" placeholder="Type amount...">
+			
+	
+		</div>
+		<div class="form-group">
+			<label for="">Service Quality</label>
+			<select class="form-control" name="" id="serviceQuality">
+				<option value="0">-- Choose an option --</option>
+				<option value="5">30% - Outstanding</option>
+				<option value="4">20% - Good</option>
+				<option value="3">15% - It was ok</option>
+				<option value="2">10% - Bad</option>
+				<option value="1">5% - Terrible</option>
+			</select>
+
+			
+		</div>
+		
+		<div class="form-group">
+			<label  for="amount">Number of people</label>
+			
+			<input class="form-control mr-2 " type="number" id="people" placeholder="Type number...">
+		
+	</div>
+	
+		<input type="submit" id="myBtn" value = "Calculate"  class="btn btn-block btn-primary">
+		</form>
+		
+	</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
